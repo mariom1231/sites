@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>jQuery Exercises</title>
+    <style>
+        .important {
+            text-align: center;
+        .clickable {
+            cursor: pointer;
+        }
+        }
+    </style>
+    <script src="/js/jquery.js"></script>
+</head>
+<body>
+     <h1 id="codeup" class="clickable">Example Page</h1>
+    <div class="codeup">
+        <h3>NOTICE</h3>
+        <p>This is an important message!</p>
+    </div>
+    <div class="not-important">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, incididunt ut <span class="codeup">labore et dolore magna aliqua.</span>, quis ut aliquip ex ea commodo.</p>
+    </div>
+    <p class="codeup">
+        This is also very important.
+    </p>
+
+    <li>List Item 1</li>
+    <li>List Item 2</li>
+
+<script>
+    $('h1').click(function() {
+        $(this).css('background-color', '#FF0');
+    }
+);   
+    $('p').dblclick(function() {
+            $(this).css('font-size', '18px');
+    }
+);
+    $('li').hover(
+    function() {
+        $(this).css('color', 'red');
+    },
+    function() {
+        $(this).css('color', 'white');
+    }
+);
+
+</script>
+
+</body>

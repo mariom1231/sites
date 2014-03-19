@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+    	<title>Switch Statement Colors JS</title>
+	</head>
+
+<body>
+    
+    <script>
+
+var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+var color = colors[Math.floor(Math.random()*colors.length)];
+
+var favorite = 'blue';
+var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+var color = colors[Math.floor(Math.random()*colors.length)];
+
+switch (color) {
+	case "red":
+		console.log("Red 5, going in!!");
+		break;
+	case "orange":
+		console.log("Orange is the new black.");
+		break;
+	case "yellow":
+		console.log("We all live in a yellow submarine.");
+		break;
+	case "green":
+		console.log("Let those who worship evil's might, beware my power, Green Lantern's light!");
+		break;
+	case "blue":
+		console.log("Blue eyes crying in the rain.");
+		break;
+	default:
+		console.log("I don't know anything by that color");
+}
+
+var color = (favorite) ? "Random color matches my favorite color." : "No color match.";
+
+	</script>
+</body>
+
+</html>

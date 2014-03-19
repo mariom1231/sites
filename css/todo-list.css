@@ -1,0 +1,12 @@
+h3.fancy-header {
+    color: blue;
+    text-decoration: underline;
+	font-family: 'Diplomata', cursive;
+}
+
+element {
+	color: #FFF;
+	font-weight: bold;
+	background-color: #000;
+	background-image: url("carbon_fibre.png");
+}

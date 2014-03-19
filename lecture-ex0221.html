@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+    	<title>Lecture Ex JS</title>
+	</head>
+
+<body>
+    
+    <script>
+
+sayHello1(); // Greetings from sayHello1.
+sayHello2(); // Uncaught TypeError: Property 'sayHello2' of object [object Object] is not a function
+
+// declare a function in the global scope
+function sayHello1 () {
+  alert('Greetings from sayHello1.');
+}
+
+// assign a function to a variable named sayHello2
+var sayHello2 = function () {
+  alert('Greetings from sayHello2.');
+}
+    </script>
+</body>
+
+</html>

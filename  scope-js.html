@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+    	<title>Scope JS</title>
+	</head>
+
+<body>
+    
+    <script>
+
+(function() {
+    	var myNameIs = 'Mario';
+    	console.log(myNameIs);
+    }());
+
+    alert(myNameIs);
+
+
+
+
+
+(function() {
+	var random = Math.floor((Math.random()*100)+1);
+	var odd = (test % 2 != 0);
+	odd ? console.log('number is odd') : console.log('Number is even');
+}());
+
+	alert(random);
+
+console.log("random: " + random);
+isOdd(random);
+
+ if (odd) {
+ 	console.log("Number is odd");
+
+ } else {
+	console.log("Number is even");
+ }
+
+
+
+    </script>
+</body>
+
+</html>

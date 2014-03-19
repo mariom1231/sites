@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+    	<title>Functions Intro JS</title>
+	</head>
+
+<body>
+    
+    <script>
+var myNameIs = 'Mario';
+
+function sayHello(name) {
+console.log('Hello ' + name);
+}
+
+sayHello(myNameIs);
+
+
+var random = Math.floor((Math.random()*100)+1);
+
+
+function isOdd(test) {
+	var odd = (test % 2 != 0);
+	odd ? console.log('Number is odd.') : console.log('Number is even.');
+}
+
+console.log("random: " + random);
+isOdd(random);
+
+if (isOdd) {
+ 	console.log("Number is odd.");
+
+	} else {
+	console.log("Number is even.");
+}
+
+    </script>
+</body>
+
+</html>
