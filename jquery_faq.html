@@ -8,7 +8,7 @@
         	text-decoration: underline;
 
         }
-        .invisible {
+        #dd {
         	display: none;
 
         }
@@ -31,19 +31,40 @@
     <script>
         $('document').ready(function() {
 
-        	$('dd').addClass('invisible').attr('class');
+        	// $('dd').addClass('invisible');
 
             $('dt').click(function() {
-            	$('dd').addClass('invisible');
-                $(this).next().toggleClass('invisible');
+            	// $('dd').addClass('invisible');
+                $(this).next().toggle();
 
             });
 
             $('#toggleBtn').click(function() {
-            	$('dd').toggleClass('invisible');
+            	$('dd').toggle();
             });
 
-	      	$('#park_name').children().first().css('font-weight', 'bold');
+	  //     	$('ul').each(function() {
+	  //     		$(this).children().first().css('font-weight', 'bold');
+			// });
+
+			// $('li').click(function() {
+	  //   		$(this).parent().hide();
+	  // 		});
+
+        	$('h3-toggle').click(function() {
+        		$('h3').fadeOut();
+
+        	})
+
+	  		$('ul').click(function(){
+	  			$(this).child().show();
+	  		});
+
+        	 $('#dd-toggle').click(function() {
+        		$('#dd').fadeOut();
+   			});
+
+
 	  	});
 
     </script>
@@ -75,22 +96,22 @@
 		<dd>The arrowhead was authorized as the official National Park Service emblem by the Secretary of the Interior on July 20, 1951. The Sequoia tree and bison represent vegetation and wildlife, the mountains and water represent scenic and recreational values, and the arrowhead represents historical and archeological values. It was registered Feb. 9, 1965, by the U.S. Patent Office as the official emblem of the NPS. Further information on the Arrowhead, including definitions, uses, powers to revoke uses, and penalties for wrongful use can be found in Title 36 Code of Federal Regulations 11.1-4.</dd>
 	</dl>
 
-    	<h3> <a href="http://www.nps.gov/jotr/index.htm">Joshua Tree</a></h3>
-	    <ul id="park_name">
+    	<h3>Joshua Tree</h3>
+	    <ul class="park_name">
 	        <li>Five of North America's 158 desert fan palm oases are located in Joshua Tree National Park, where fault lines force water to the surface.</li>
 	        <li>Joshua Tree is crisscrossed with hundreds of faults, and is a great place to see raw rocks and the effects of earthquakes. The famous San Andreas Fault bounds the south side of the park and can be observed from Keys View.</li>
 	        <li>With nearly 750 species of vascular plants, Joshua Tree is renowned for its plant diversity. No wonder that when the area was first proposed for preservation in the early 1930s, the name suggested was Desert Plants National Park. </li>
 	        <li>One of the most beautiful spectacles in spring is the creamy-white blossoms of Joshua trees. These white candles can be seen from February to late March. Joshua trees do not branch until after they bloom, and they don't bloom every year.</li>
 	    </ul>
-    	<h3><a href="http://www.nps.gov/deva/index.htm">Death Valley</a></h3>
-	    <ul id="park_name">
+    	<h3>Death Valley</h3>
+	    <ul class="park_name">
 	        <li>The salt pan on the floor of Death Valley covers more than 200 square miles. It is 40 miles long and more than 5 miles wide.</li>
 	        <li>Telescope Peak in Death Valley National Park was named by Dr. Samuel George in 1861. After climbing the 11,049 foot peak, Dr. George said that he could see so far that it reminded him of looking through a telescope.</li>
 	        <li>Death Valley is the hottest place on Earth. In July 1913, five consecutive days of 129&#176;F or above were recorded in Death Valley. On July 10, 1913 a reading of 134&#176;F was taken, the world record hottest air temperature.</li>
 	        <li>Death Valley is home to more than 1,000 species of plants and more than 50 of those are endemics, found nowhere else in the world.</li>
 	    </ul>
-	    <h3><a href="http://www.nps.gov/maca/index.htm"</a>Mammoth Cave</a></h3>
-	     <ul id="park_name">
+	    <h3>Mammoth Cave</h3>
+	     <ul class="park_name">
 	        <li>The grease-oil lamp was used to illuminate Mammoth Cave for more than a century. Designed after New England whale-oil lanterns, these lamps used cooking grease to light the way.</li>
 	        <li>The Green and Nolin Rivers course more than 30 miles through Mammoth Cave National Park, offering hours of boating, canoeing, fishing, and floodplain camping.</li>
 	        <li>Mammoth Cave National Park contains more than 70 miles of backcountry trails through forested Kentucky hills for hikers, horseback riders, and bicyclists. Several frontcountry trails lead to special places like Cedar Sink, Sand Cave, and Turnhole Bend.</li>
