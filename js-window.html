@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Delayed Autosave</title>
+    <title>jQuery Keyboard Events</title>
 </head>
 <body>
 
@@ -37,6 +37,12 @@
         // we will learn about events in the DOM lessons
         var textarea = document.getElementById('important');
         textarea.addEventListener('keyup', autosave, false);
+        
+
+        $('#textfield').keyup(function() {
+                alert('.keyup() event fired');
+            });
+        });
 
     </script>
 
