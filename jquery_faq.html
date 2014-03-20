@@ -1,0 +1,102 @@
+<html>
+<head>
+	<title>jQuery FAQ</title>
+	<style> 
+
+        dl dt {
+        	font-weight: bold;
+        	text-decoration: underline;
+
+        }
+        .invisible {
+        	display: none;
+
+        }
+
+        dt:hover {
+    		cursor: pointer;
+		}
+
+		#toggleBtn:hover {
+			cursor: pointer;
+		}
+
+		body {
+			margin 25px;
+			padding: 10;
+		}
+
+    </style>
+    <script src="/js/jquery.js"></script>
+    <script>
+        $('document').ready(function() {
+
+        	$('dd').addClass('invisible').attr('class');
+
+            $('dt').click(function() {
+            	$('dd').addClass('invisible');
+                $(this).next().toggleClass('invisible');
+
+            });
+
+            $('#toggleBtn').click(function() {
+            	$('dd').toggleClass('invisible');
+            });
+
+	      	$('#park_name').children().first().css('font-weight', 'bold');
+	  	});
+
+    </script>
+</head>
+<body>
+	<h3>10 National Park FAQ's</h3>
+	<button id="toggleBtn">Toggle Answers</button>
+	<dl>
+		<dt>What government agency oversees the National Park Service?</dt>
+		<dd>The National Park Service is a bureau of the Department of the Interior. Directly overseeing its operation is the Department's Assistant Secretary for Fish and Wildlife and Parks.</dd>
+		<dt>How old is the national park system?</dt>
+		<dd>The National Park Service was created by an Act signed by President Woodrow Wilson on August 25, 1916. Yellowstone National Park was established by an Act signed by President Ulysses S. Grant on March 1, 1872, as the nation's first national park.</dd>
+		<dt>How many areas are there in the national park system?</dt>
+		<dd>The national park system comprises 401 areas covering more than 84 million acres in every state, the District of Columbia, American Samoa, Guam, Puerto Rico, and the Virgin Islands. These areas include national parks, monuments, battlefields, military parks, historical parks, historic sites, lakeshores, seashores, recreation areas, scenic rivers and trails, and the White House. Learn more about national park designations. See the complete list of National Park Service sites and affiliated areas by type and number.</dd>
+		<dt>What is the largest/smallest national park site?</dt>
+		<dd>Largest - Wrangell-St. Elias National Park and Preserve, AK - 13.2 million acres<br>
+		Smallest - Thaddeus Kosciuszko National Memorial, PA - 0.02 acres</dd>
+		<dt>How many people visit the national parks?</dt>
+		<dd>Total recreation visitors to the national parks in 2011: 278,939,216</dd>
+		<dt>How do I obtain a park pass?</dt>
+		<dd>Visitors can obtain park passes by visiting their nearest park site. Most sites have passes available, however it is recommended to call a park prior to your visit. Learn more about the America the Beautiful - National Parks and Federal Recreation Lands Pass.</dd>
+		<dt>How do I make reservations for camping/lodging in national parks?</dt>
+		<dd>For campground reservations go here. Not all parks participate in this service, many campgrounds are first come, first served. For more information on specific camping and lodging services offered at the park(s) of your interest, please check their homepage by using our search feature.</dd>
+		<dt>What do I need to know about driving off road in national parks?</dt>
+		<dd>Before you head out, check with the national parks that you intend to visit. In many national parks, off-road driving is illegal. Where off-road driving is allowed, the National Park Service regulates it.</dd>
+		<dt>What are concessions?</dt>
+		<dd>There are more than 630 NPS concessionaires (in 128 different park units) which vary in size from small, family-owned businesses to national/international corporations. Concessionaires provide park visitors with lodging, transportation, food services, shops, and other services. Learn more about commercial services in the National Park Service.</dd>
+		<dt>What is the origin of the National Park Service arrowhead?</dt>
+		<dd>The arrowhead was authorized as the official National Park Service emblem by the Secretary of the Interior on July 20, 1951. The Sequoia tree and bison represent vegetation and wildlife, the mountains and water represent scenic and recreational values, and the arrowhead represents historical and archeological values. It was registered Feb. 9, 1965, by the U.S. Patent Office as the official emblem of the NPS. Further information on the Arrowhead, including definitions, uses, powers to revoke uses, and penalties for wrongful use can be found in Title 36 Code of Federal Regulations 11.1-4.</dd>
+	</dl>
+
+    	<h3> <a href="http://www.nps.gov/jotr/index.htm">Joshua Tree</a></h3>
+	    <ul id="park_name">
+	        <li>Five of North America's 158 desert fan palm oases are located in Joshua Tree National Park, where fault lines force water to the surface.</li>
+	        <li>Joshua Tree is crisscrossed with hundreds of faults, and is a great place to see raw rocks and the effects of earthquakes. The famous San Andreas Fault bounds the south side of the park and can be observed from Keys View.</li>
+	        <li>With nearly 750 species of vascular plants, Joshua Tree is renowned for its plant diversity. No wonder that when the area was first proposed for preservation in the early 1930s, the name suggested was Desert Plants National Park. </li>
+	        <li>One of the most beautiful spectacles in spring is the creamy-white blossoms of Joshua trees. These white candles can be seen from February to late March. Joshua trees do not branch until after they bloom, and they don't bloom every year.</li>
+	    </ul>
+    	<h3><a href="http://www.nps.gov/deva/index.htm">Death Valley</a></h3>
+	    <ul id="park_name">
+	        <li>The salt pan on the floor of Death Valley covers more than 200 square miles. It is 40 miles long and more than 5 miles wide.</li>
+	        <li>Telescope Peak in Death Valley National Park was named by Dr. Samuel George in 1861. After climbing the 11,049 foot peak, Dr. George said that he could see so far that it reminded him of looking through a telescope.</li>
+	        <li>Death Valley is the hottest place on Earth. In July 1913, five consecutive days of 129&#176;F or above were recorded in Death Valley. On July 10, 1913 a reading of 134&#176;F was taken, the world record hottest air temperature.</li>
+	        <li>Death Valley is home to more than 1,000 species of plants and more than 50 of those are endemics, found nowhere else in the world.</li>
+	    </ul>
+	    <h3><a href="http://www.nps.gov/maca/index.htm"</a>Mammoth Cave</a></h3>
+	     <ul id="park_name">
+	        <li>The grease-oil lamp was used to illuminate Mammoth Cave for more than a century. Designed after New England whale-oil lanterns, these lamps used cooking grease to light the way.</li>
+	        <li>The Green and Nolin Rivers course more than 30 miles through Mammoth Cave National Park, offering hours of boating, canoeing, fishing, and floodplain camping.</li>
+	        <li>Mammoth Cave National Park contains more than 70 miles of backcountry trails through forested Kentucky hills for hikers, horseback riders, and bicyclists. Several frontcountry trails lead to special places like Cedar Sink, Sand Cave, and Turnhole Bend.</li>
+	        <li>Mammoth Cave is the world's longest known cave, with more than 400 miles of interconnected passages&#45;so long that if the second and third longest caves in the world were joined together, Mammoth Cave would still be the planet's longest cave and have more than 100 miles left over!
+	        </li>
+	    </ul>
+
+</body>
+</html>
