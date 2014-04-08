@@ -1,24 +1,160 @@
+<!-- <html>
+<head>
+	<style>
+	.game-container { float: left; width: 430; }
+.stats-container { float: right; width: 161; }
+.logo { height: 95; width: 100%; }
+.scoreboard { height: 148; width: 100%; }
+.restart { height: 148; width: 100%; }
+	</style>
+</head>
+<body>
+<div class="game-container">
+    <div class="container">
+        <div id="a1" class="card"></div>
+        ...
+    </div>
+</div>
+<div class="stats-container">
+    <div class="logo">LOGO</div>
+    <div class="scoreboard"></div>
+    <div class="restart"><input id="clicky" type="button" value="Restart"/></div>
+</div>
+<div id="msg"></div>
+</body>
+</html> -->
+
 <html>
 <head>
-	<title>Whack</title>
-	<style>
+	<title>Whack-A-Mole</title>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	
-	#img {
+	<style>
+
+	#game-board {
+		margin: 10px auto;
+		width: 456px;
+	}
+
+	.mole-hole {
+		border: 1px solid black;
+		float: left;
+		height: 150px;
+		width: 150px;
+	}
+
+	.footballer {
 		display: none;
 	}
 
-	</style>
-	
-	<img src="/img/wack-a-mole/nossa-worldcup14-closeup.jpg" alt="Image">
-	<script src="/js/jquery.js"></script>
+	img {
+		max-height: 100%;
+		max-width: 100%;
+	}
 
-	<script type
-		$('img-toggle').click(function() {
-        	$('img').fadeOut();
-        });
-        </script>
+	body {
+		text-align: center;
+	}
+
+	#main-header { 
+		margin-bottom: 50px;
+
+	</style>
+
 </head>
 <body>
+ 
+ <h3 id="main-header">Whack-A-Mole: World Cup 2014 Edition</h3>
+
+ <label for="team">Who is your favorite team? </label>
+<select id="team" name="team[]" >
+    <option value="Algeria">Algeria</option>
+    <option value="Argentina">Argentina</option>
+    <option value="Australia">Australia</option>
+    <option value="Belgium">Belgium</option>
+    <option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
+    <option value="Brazil">Brazil</option>
+    <option value="Cameroon">Cameroon</option>
+    <option value="Chile">Chile</option>
+    <option value="Colombia">Colombia</option>
+    <option value="Costa Rica">Costa Rica</option>
+    <option value="Croatia">Croatia</option>
+    <option value="Ecuador">Ecuador</option>
+    <option value="England">England</option>
+    <option value="France">France</option>
+    <option value="Germany">Germany</option>
+    <option value="Ghana">Ghana</option>
+    <option value="Greece">Greece</option>
+    <option value="Honduras">Honduras</option>
+    <option value="Iran">Iran</option>
+    <option value="Italy">Italy</option>
+    <option value="Ivory Coast">Ivory Coast</option>
+    <option value="Japan">Japan</option>
+    <option value="Korea Republic">Korea Republic</option>
+    <option value="Mexico">Mexico</option>
+    <option value="Netherlands">Netherlands</option>
+    <option value="Nigeria">Nigeria</option>
+    <option value="Portugal">Portugal</option>
+    <option value="Russia">Russia</option>
+    <option value="Spain">Spain</option>
+    <option value="Switzerland">Switzerland</option>
+    <option value="Uruguay">Uruguay</option>
+    <option value="USA">USA</option>
+	
+</select>
+
+<div id="game-board">
+
+	<div class="mole-hole">
+		<img class="footballer" src="img/wack-a-mole/footballers/chelsea-terry.jpg">
+	</div>
+	<div class="mole-hole">
+		<img class="footballer" src="img/wack-a-mole/footballers/chelsea-terry.jpg">
+	</div>
+	<div class="mole-hole">
+		<img class="footballer" src="img/wack-a-mole/footballers/chelsea-terry.jpg">
+	</div>
+	<div class="mole-hole">
+		<img class="footballer" src="img/wack-a-mole/footballers/chelsea-terry.jpg">
+	</div>
+	<div class="mole-hole">
+		<img class="footballer" src="img/wack-a-mole/footballers/chelsea-terry.jpg">
+	</div>
+	<div class="mole-hole">
+		<img class="footballer" src="img/wack-a-mole/footballers/chelsea-terry.jpg">
+	</div>
+	<div class="mole-hole">
+		<img class="footballer" src="img/wack-a-mole/footballers/chelsea-terry.jpg">
+	</div>
+	<div class="mole-hole">
+		<img class="footballer" src="img/wack-a-mole/footballers/chelsea-terry.jpg">
+	</div>
+	<div class="mole-hole">
+		<img class="footballer" src="img/wack-a-mole/footballers/chelsea-terry.jpg">
+	</div>
+
+	<script>
+		
+		var footballers = $('.footballer');
+
+// Get random footballer image			
+		function setFootballer() {
+			var footballer = footballers[Math.floor(Math.random() * footballers.length)];
+				$(footballer).fadeIn;
+				$(footballer).fadeOut;
+		}
+
+//Hide image if footballer is clicked
+
+		 $('.footballer').click(function () {
+				$(this).hide();
+		});
+ 
+		
+
+
+
+	</script>
 
 </body>
 </html>
